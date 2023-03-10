@@ -20,7 +20,6 @@ public class Laser : MonoBehaviour
             LaserActivate(_laser, _lengh, _scaleSpeed);
         }
 
-
     }
 
 
