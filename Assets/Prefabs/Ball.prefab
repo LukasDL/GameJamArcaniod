@@ -91,7 +91,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8153045389134002403}
-  m_Material: {fileID: 13400000, guid: 38448b2e8eb67ca429678e99c6b21c61, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -137,7 +137,7 @@ Transform:
   m_Children:
   - {fileID: 8153045389134002407}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8153045389972728888
 Rigidbody:
@@ -179,5 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 8153045389972728888}
-  _minSpeed: 10
-  _maxSpeed: 25
+  _ballPoint: {fileID: 0}
+  _beginGameCheck: 0
+  _startForceX: 0
+  _startForceY: 0
