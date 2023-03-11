@@ -11,7 +11,6 @@ public class MoveOrbit : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            // transform.localEulerAngles += _rotationY * Time.deltaTime * _rotateSpeed;
 
             transform.Rotate(_rotationY * Time.deltaTime * _rotateSpeed);
          
@@ -19,7 +18,6 @@ public class MoveOrbit : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            // transform.localEulerAngles -= _rotationY * Time.deltaTime * _rotateSpeed;
             transform.Rotate(-_rotationY * Time.deltaTime * _rotateSpeed);
 
         }

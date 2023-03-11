@@ -7,9 +7,6 @@ public class BallManager : MonoBehaviour
     [SerializeField] private Ball _ball;
     public int BallCount;
 
-    List <Ball> BallsList= new ();
-
-
     private void Start()
     {
         BallCounter();
@@ -19,7 +16,7 @@ public class BallManager : MonoBehaviour
     {
         if (BallCount == 0)
         {
-            _ball.BallRestart();
+            //_ball.BallRestart();
             BallCounter();
         }
     }
@@ -29,13 +26,18 @@ public class BallManager : MonoBehaviour
     private void BallCounter()
     {
 
-        if (FindObjectOfType<Ball>().gameObject)
-        {
-            BallCount++;
-        }
+        //if (FindObjectOfType<Ball>().gameObject)
+        //{
+        //    BallCount++;
+        //}
 
 
     }
+
+
+
+
+
 
 
 }

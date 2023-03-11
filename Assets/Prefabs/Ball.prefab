@@ -91,7 +91,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8153045389134002403}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 38448b2e8eb67ca429678e99c6b21c61, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -115,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8153045389972728895}
   - component: {fileID: 8153045389972728888}
-  - component: {fileID: 8153045389972728889}
+  - component: {fileID: -3874265950915968041}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -131,7 +131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8153045389972728890}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.25, y: 3.65, z: 0}
+  m_LocalPosition: {x: 0, y: -29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -166,7 +166,7 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &8153045389972728889
+--- !u!114 &-3874265950915968041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,8 +178,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ae09aad5a9efb429addf7ddeeb1072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 8153045389972728888}
-  _ballPoint: {fileID: 0}
-  _beginGameCheck: 0
-  _startForceX: 0
-  _startForceY: 0

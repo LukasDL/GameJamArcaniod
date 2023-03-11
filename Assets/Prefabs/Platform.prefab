@@ -285,6 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3180023938626874419}
   - component: {fileID: 1842590249}
+  - component: {fileID: 5216840688548874929}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -308,7 +309,7 @@ Transform:
   - {fileID: 7503256310284404844}
   - {fileID: 854237907068202606}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1842590249
 MonoBehaviour:
@@ -325,6 +326,18 @@ MonoBehaviour:
   _laser: {fileID: 8565836925133379312}
   _lengh: 15
   _scaleSpeed: 25
+--- !u!114 &5216840688548874929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8433900631598565078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee99849d7d52634db0789be4698710d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8565836925133379312
 GameObject:
   m_ObjectHideFlags: 0
