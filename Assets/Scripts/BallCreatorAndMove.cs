@@ -57,15 +57,15 @@ public class BallCreatorAndMove : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            ball = CreateBall();
-            _ballRigitbody = ball.GetComponent<Rigidbody>();
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    ball = CreateBall();
+        //    _ballRigitbody = ball.GetComponent<Rigidbody>();
 
-            AddForceToBall();
+        //    AddForceToBall();
 
 
-        }
+        //}
 
 
 

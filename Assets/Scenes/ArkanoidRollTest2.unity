@@ -7569,6 +7569,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8143996c9b50daf42ba77bb783477fb6, type: 3}
+--- !u!1 &492045998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8433900631598565078, guid: fc7a41be39670d24e8363ecdfedc9cde,
+    type: 3}
+  m_PrefabInstance: {fileID: 415271689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &492347440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 202148193197855049, guid: 8143996c9b50daf42ba77bb783477fb6,
@@ -8985,6 +8991,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8143996c9b50daf42ba77bb783477fb6, type: 3}
+--- !u!1 &616627003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8433900631598565078, guid: fc7a41be39670d24e8363ecdfedc9cde,
+    type: 3}
+  m_PrefabInstance: {fileID: 1966730713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &616627004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3180023938626874419, guid: fc7a41be39670d24e8363ecdfedc9cde,
@@ -10143,6 +10155,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8143996c9b50daf42ba77bb783477fb6, type: 3}
+--- !u!1 &759143565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8433900631598565078, guid: fc7a41be39670d24e8363ecdfedc9cde,
+    type: 3}
+  m_PrefabInstance: {fileID: 88034998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &759143566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3180023938626874419, guid: fc7a41be39670d24e8363ecdfedc9cde,
@@ -17318,12 +17336,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9eaf888d133ce5438dda197be71e5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointPlatform1: {fileID: 1499764003}
-  _pointPlatform2: {fileID: 1400340409}
-  _pointPlatform3: {fileID: 273008523}
-  _pointPlatform4: {fileID: 126405391}
+  _spawnPointPlatform1: {fileID: 1499764003}
+  _spawnPointPlatform2: {fileID: 1400340409}
+  _spawnPointPlatform3: {fileID: 273008523}
+  _spawnPointPlatform4: {fileID: 126405391}
   StartPlatform: {fileID: 0}
-  PlatformsList: []
+  PlatformsList:
+  - {fileID: 492045998}
+  - {fileID: 1668220163}
+  - {fileID: 616627003}
+  - {fileID: 759143565}
   NumberIfmainPlatform: 0
   deltaOfBallSpawn: {x: 0, y: 0, z: 0}
   SceneBallCenter: {fileID: 1755625753}
