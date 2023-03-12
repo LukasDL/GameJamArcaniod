@@ -5,9 +5,11 @@ public class BallCreatorAndMove : MonoBehaviour
 {
     [Header("SpawnBall")]
     [SerializeField] private GameObject _ballPrefab;
-    [SerializeField] private Transform spawnPoint;
-    [SerializeField] private GameObject PlatformCenter;
-    public float _deltaRotateZ;
+    [SerializeField] private Transform PlatformCenter;
+    public PlatformManager _platformManager;
+
+    [Space]
+    public Transform SpawnPoint;
     public GameObject ball;
     Rigidbody _ballRigitbody;
 
@@ -15,9 +17,9 @@ public class BallCreatorAndMove : MonoBehaviour
     [Header("MoveBall")]
     [SerializeField] bool _checkGameBegin;
 
-    [SerializeField][Range(-10f, 0f)] private float _startForceMinX;
-    [SerializeField][Range(0f, 10f)] private float _startForceMaxX;
-    [SerializeField][Range(10f, 30f)] private float _startForceY;
+    [SerializeField][Range(0f, 25f)] private float _startForceUp;
+    [SerializeField][Range(0f, 15f)] private float _startForceLeftRight;
+
 
     [Header("TEST")]
     [SerializeField] private float _timeOfBoost;
@@ -33,10 +35,7 @@ public class BallCreatorAndMove : MonoBehaviour
         ball = CreateBall();
         _ballRigitbody = ball.GetComponent<Rigidbody>();
 
-     
-
     }
-
 
 
     void Update()
@@ -44,28 +43,9 @@ public class BallCreatorAndMove : MonoBehaviour
         lastvelocity = _ballRigitbody.velocity;
 
 
-
         if (_checkGameBegin == false)
         {
-            ball.transform.position = spawnPoint.position;
-            _deltaRotateZ = PlatformCenter.GetComponent<PlatformManager>().deltaOfBallSpawn;
-
-            transform.rotation = Quaternion.EulerRotation(PlatformCenter.transform.rotation.x,
-                                                PlatformCenter.transform.rotation.y,
-                                                PlatformCenter.transform.rotation.z + _deltaRotateZ);
-
-
-
-
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-
-                _ballRigitbody.AddRelativeForce(Random.Range(_startForceMinX, _startForceMaxX),
-                    _startForceY, 0f, ForceMode.VelocityChange);
-                _checkGameBegin = true;
-
-            }
+            AddForceToBall();
         }
 
         else if (_checkGameBegin == true)
@@ -77,41 +57,58 @@ public class BallCreatorAndMove : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            ball = CreateBall();
+            _ballRigitbody = ball.GetComponent<Rigidbody>();
+
+            AddForceToBall();
 
 
-        //if (boostCheck == false)
-        //{
-        //    if (Input.GetKeyDown(KeyCode.T))
-        //    {
-        //        BallSpeedBoost();
-        //        boostCheck = true;
-        //    }
-        //}
-
-        //else if (boostCheck == true)
-        //{
-        //    BallSpeedNormal();
-        //}
+        }
 
 
 
+
+            ////////////       Activate Boost Speed x2     /////////////////
+
+            if (boostCheck == false)
+        {
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                BallSpeedBoost();
+                boostCheck = true;
+            }
+        }   
+        
+        else if (boostCheck == true)
+        {
+            BallSpeedNormal();
+        }
+
+
+
+        
 
 
     }
 
 
-
-    public GameObject CreateBall()
-    {
-        GameObject spawnBall = Instantiate(_ballPrefab, spawnPoint.position, Quaternion.identity);
-        return spawnBall;
-
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
         _ballRigitbody.velocity = Vector3.Reflect(lastvelocity, collision.contacts[0].normal);
     }
+
+    public GameObject CreateBall()
+    {
+        GameObject spawnBall = Instantiate(_ballPrefab, SpawnPoint.position, Quaternion.identity);
+       // BallManager.BallssList.Add(spawnBall);
+        return spawnBall;
+
+    }
+
+
 
     public void BallSpeedBoost()
     {
@@ -132,10 +129,29 @@ public class BallCreatorAndMove : MonoBehaviour
     }
     public void BallRestart()
     {
+        _platformManager.MainPlatformSelected();
+
         _checkGameBegin = false;
-        // ball.transform.rotation = spawnPoint.rotation;
         _ballRigitbody.velocity = Vector3.zero;
+        
     }
+
+    public void AddForceToBall()
+    {
+
+        ball.transform.position = SpawnPoint.position;
+        ball.transform.rotation = SpawnPoint.rotation;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+            _ballRigitbody.AddRelativeForce(Random.Range(-1f, 1f) * _startForceLeftRight, _startForceUp, 0f,
+                                            ForceMode.VelocityChange);
+            _checkGameBegin = true;
+        }
+
+    }
+
 
 
 }

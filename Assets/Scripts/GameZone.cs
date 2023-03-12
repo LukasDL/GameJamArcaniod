@@ -3,12 +3,16 @@ using UnityEngine;
 public class GameZone : MonoBehaviour
 {
 
-    [SerializeField] private BallManager ballManager;
+
+    [SerializeField] private BallCreatorAndMove _ballRestart;
 
 
     private void OnTriggerEnter(Collider other)
     {
-        ballManager.BallCount--;
+
+        _ballRestart.BallRestart();
+        //ballManager.BallCount--;
+
     }
 
 

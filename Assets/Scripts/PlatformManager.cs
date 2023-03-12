@@ -3,21 +3,68 @@ using UnityEngine;
 
 public class PlatformManager : MonoBehaviour
 {
+    [Header("StartPoints")]
+    [SerializeField] private Transform _pointPlatform1;
+    [SerializeField] private Transform _pointPlatform2;
+    [SerializeField] private Transform _pointPlatform3;
+    [SerializeField] private Transform _pointPlatform4;
+    public Transform StartPlatform;
 
-    [SerializeField] public List<GameObject> _PlatformsList = new(4);
-    public int NumberIfmainPlatform;
-    public float deltaOfBallSpawn;
+    [SerializeField] private List<GameObject> PlatformsList = new(4);
+    [SerializeField] private int NumberIfmainPlatform;
+    [SerializeField] private Vector3 deltaOfBallSpawn;
+    [SerializeField] private BallCreatorAndMove SceneBallCenter;
+
+
 
 
     private void Start()
     {
-        //MaonPlatformSelect();
+        MainPlatformSelected();
+    }
+
+
+    public void MainPlatformSelected()
+    {
+
+        for (int i = 0; i < PlatformsList.Count; i++)
+        {
+
+            if (PlatformsList[i].activeSelf == true)
+            {
+                NumberIfmainPlatform = i;
+                break;
+            }
+        }
+
+
+        if (NumberIfmainPlatform == 0)
+        {
+            StartPlatform = _pointPlatform1;
+        }
+
+        else if (NumberIfmainPlatform == 1)
+        {
+            StartPlatform = _pointPlatform2;
+
+        }
+
+        else if (NumberIfmainPlatform == 2)
+        {
+            StartPlatform = _pointPlatform3;
+
+        }
+
+        else if (NumberIfmainPlatform == 3)
+        {
+            StartPlatform = _pointPlatform4;
+        }
+
+        SceneBallCenter.SpawnPoint = StartPlatform;
+
 
     }
-    private void Update()
-    {
-        MaonPlatformSelect();
-    }
+
 
 
     public void DestroyPlartform(GameObject _platform)
@@ -26,39 +73,5 @@ public class PlatformManager : MonoBehaviour
         _platform.SetActive(false);
     }
 
-    public void MaonPlatformSelect()
-    {
-      
-            for (int i = 0; i < _PlatformsList.Count; i++)
-            {
 
-                if (_PlatformsList[i].activeSelf == true)
-                {
-                NumberIfmainPlatform = i;
-                    break;
-                }
-
-            if (NumberIfmainPlatform == 0)
-                deltaOfBallSpawn = 0f;
-
-            else if (NumberIfmainPlatform == 1)
-                deltaOfBallSpawn = -90f;
-
-            else if (NumberIfmainPlatform == 2)
-                deltaOfBallSpawn = 180f;
-
-            else if (NumberIfmainPlatform == 3)
-                deltaOfBallSpawn = 90f;          
-                
-                
-
-
-
-            }
-
-
-
-        }
-
-
-    }
+}

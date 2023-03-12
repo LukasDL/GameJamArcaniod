@@ -4,21 +4,22 @@ using UnityEngine;
 public class BallManager : MonoBehaviour
 {
 
-    [SerializeField] private Ball _ball;
+    [SerializeField] private BallCreatorAndMove _ballRestart;
     public int BallCount;
+
+    public List <GameObject> BallssList = new();
 
     private void Start()
     {
-        BallCounter();
+       // BallCounter();
     }
 
     private void Update()
     {
-        if (BallCount == 0)
-        {
-            //_ball.BallRestart();
-            BallCounter();
-        }
+        
+            //_ballRestart.BallRestart();
+            //BallCounter();
+        
     }
 
 
@@ -26,10 +27,6 @@ public class BallManager : MonoBehaviour
     private void BallCounter()
     {
 
-        //if (FindObjectOfType<Ball>().gameObject)
-        //{
-        //    BallCount++;
-        //}
 
 
     }
