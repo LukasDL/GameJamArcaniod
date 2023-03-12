@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu_Scene.unity
+    guid: e9ca2acf88daecc41b51c2590e130d7f
+  - enabled: 1
     path: Assets/Scenes/ArkanoidRollTest2.unity
     guid: 40c9ede68513d6f4d9479351a4bb09e6
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 7cfead8ad84344b418fdbc0be366d91c
   m_configObjects: {}
