@@ -6,8 +6,7 @@ public class BallManager : MonoBehaviour
 
     [SerializeField] private BallCreatorAndMove _ballRestart;
     public int BallCount;
-
-    public List <GameObject> BallssList = new();
+      
 
     private void Start()
     {
@@ -16,11 +15,15 @@ public class BallManager : MonoBehaviour
 
     private void Update()
     {
+
+        //_ballRestart.BallRestart();
+        //BallCounter();
         
-            //_ballRestart.BallRestart();
-            //BallCounter();
-        
+
+
     }
+
+
 
 
 

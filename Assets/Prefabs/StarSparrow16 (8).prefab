@@ -728,13 +728,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1435447904545181229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db987da445ff7e44c8884250058093de, type: 3}
+  m_Script: {fileID: 11500000, guid: 39431d74894c8a64f90e84bb7df20b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   center: {fileID: 0}
   axis: {x: 0, y: 0, z: 0}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &1435724441002604836
 GameObject:
   m_ObjectHideFlags: 0

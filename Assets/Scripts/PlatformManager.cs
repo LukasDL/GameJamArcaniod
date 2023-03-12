@@ -10,14 +10,12 @@ public class PlatformManager : MonoBehaviour
     [SerializeField] private Transform _spawnPointPlatform4;
     public Transform StartPlatform;
 
-    [SerializeField] private List<GameObject> PlatformsList = new(4);
+    public List<GameObject> PlatformsList = new(4);
 
 
     [SerializeField] private int NumberIfmainPlatform;
     [SerializeField] private Vector3 deltaOfBallSpawn;
     [SerializeField] private BallCreatorAndMove SceneBallCenter;
-
-
 
 
     private void Start()
@@ -73,6 +71,25 @@ public class PlatformManager : MonoBehaviour
 
         _platform.SetActive(false);
     }
+
+    public void NewPlatforms()
+    {
+        for (int i = 0; i < PlatformsList.Count; i++)
+        {
+
+            if (PlatformsList[i].activeSelf == false)
+            {
+                PlatformsList[i].SetActive (true);
+                break;
+            }
+        }
+
+
+
+    }
+
+
+
 
 
 }

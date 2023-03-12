@@ -325,7 +325,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &64601878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &90963915
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,9 +554,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43cb1abba8e3a884cb2d9425b5d40a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _laser: {fileID: 1101686219}
-  _timerToShot: 3
-  _timerShot: 2
 --- !u!4 &90963917
 Transform:
   m_ObjectHideFlags: 0
@@ -684,7 +681,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &133721152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -951,10 +948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b42041d0cbc9468d4854d272c486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radios: 30
-  _speedLerp: 8
-  _angleSpeed: 1.5
-  _angle: 0
 --- !u!114 &152749357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,7 +960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5527d2c90c0f554090bbcf048b64878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _powerPin: 1
 --- !u!1 &176618286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1173,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &189002652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -1501,7 +1493,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &225278953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1709,7 +1701,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &269702877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 969453084}
-  ScoreCount: 0
+  Score: 0
 --- !u!4 &269702879
 Transform:
   m_ObjectHideFlags: 0
@@ -2851,7 +2843,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &453955002
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,10 +3640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b42041d0cbc9468d4854d272c486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radios: 30
-  _speedLerp: 8
-  _angleSpeed: 1.5
-  _angle: 3.15
 --- !u!114 &527603667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3692,7 +3680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5527d2c90c0f554090bbcf048b64878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _powerPin: 4
 --- !u!1 &539887471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3592690165032589382, guid: a303e95807e2616408f6c4cff0fd3208,
@@ -3720,7 +3707,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &543073824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3592690165032589382, guid: a303e95807e2616408f6c4cff0fd3208,
@@ -3748,7 +3735,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &546478784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4066,7 +4053,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &572904851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1105741334745168, guid: dc92f6c59177d3b48834d869261d80b1,
@@ -4094,7 +4081,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &610417784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -4128,7 +4115,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &623780344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -4760,7 +4747,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &762483660 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1105741334745168, guid: dc92f6c59177d3b48834d869261d80b1,
@@ -4788,7 +4775,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &765773495 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3592690165032589382, guid: a303e95807e2616408f6c4cff0fd3208,
@@ -4816,7 +4803,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &778262850
 GameObject:
   m_ObjectHideFlags: 0
@@ -4887,7 +4874,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5296,7 +5283,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &882450873 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1105741334745168, guid: dc92f6c59177d3b48834d869261d80b1,
@@ -5324,7 +5311,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &885835174
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,7 +5833,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &950058879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -6735,7 +6722,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &1056299569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7584822000608053182, guid: 58734c41594668840bd3847f2b5ce512,
@@ -6763,7 +6750,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1060790344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7055,7 +7042,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &1101686219
 GameObject:
   m_ObjectHideFlags: 0
@@ -7202,7 +7189,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &1150819157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -7897,7 +7884,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1292786514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8154,7 +8141,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1340414287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8423,7 +8410,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &1352755076
 GameObject:
   m_ObjectHideFlags: 0
@@ -8522,7 +8509,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1382951293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8773,7 +8760,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1404365372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9032,7 +9019,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &1440671299 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -9385,10 +9372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b42041d0cbc9468d4854d272c486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radios: 30
-  _speedLerp: 8
-  _angleSpeed: 1.5
-  _angle: 2.1
 --- !u!114 &1478453928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9429,7 +9412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5527d2c90c0f554090bbcf048b64878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _powerPin: 3
 --- !u!1 &1482487996
 GameObject:
   m_ObjectHideFlags: 0
@@ -9664,7 +9646,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &1498273936
 GameObject:
   m_ObjectHideFlags: 0
@@ -9746,10 +9728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b42041d0cbc9468d4854d272c486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radios: 30
-  _speedLerp: 8
-  _angleSpeed: 1.5
-  _angle: 5.25
 --- !u!114 &1498273940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9790,7 +9768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5527d2c90c0f554090bbcf048b64878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _powerPin: 6
 --- !u!1001 &1501350294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10074,7 +10051,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1529542466
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10312,10 +10289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b42041d0cbc9468d4854d272c486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radios: 30
-  _speedLerp: 8
-  _angleSpeed: 1.5
-  _angle: 4.2
 --- !u!114 &1565226362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10356,7 +10329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5527d2c90c0f554090bbcf048b64878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _powerPin: 5
 --- !u!1 &1578841282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7584822000608053182, guid: 58734c41594668840bd3847f2b5ce512,
@@ -10384,7 +10356,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &1596058520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -10418,7 +10390,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1604108073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10602,7 +10574,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &1626009517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -10843,7 +10815,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1658452535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11350,7 +11322,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &1699069226
 GameObject:
   m_ObjectHideFlags: 0
@@ -11466,7 +11438,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1699069226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6067e1ea075d33f4daa6f8b4c962bc6c, type: 3}
+  m_Script: {fileID: 11500000, guid: e385cd19301ce7b498af16d8bce55266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 1345053598}
@@ -12123,7 +12095,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &1827325196 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1105741334745168, guid: dc92f6c59177d3b48834d869261d80b1,
@@ -12151,7 +12123,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1001 &1833799435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12349,7 +12321,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &1866057077 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1105741334745168, guid: dc92f6c59177d3b48834d869261d80b1,
@@ -12377,7 +12349,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &1866785500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -12411,7 +12383,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.5}
   numberEnemy: 3
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &1900834374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3348740015292595801, guid: 47f103c1a02aa9c4394e686d96c0df4b,
@@ -12556,7 +12528,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &2013712540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7584822000608053182, guid: 58734c41594668840bd3847f2b5ce512,
@@ -12584,7 +12556,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &2015625986
 GameObject:
   m_ObjectHideFlags: 0
@@ -12614,10 +12586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264536ff897d3be4f89dc25830c54773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundList:
-  - {fileID: 1482487997}
-  - {fileID: 989973850}
-  - {fileID: 189017967}
 --- !u!4 &2015625988
 Transform:
   m_ObjectHideFlags: 0
@@ -12790,10 +12758,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b42041d0cbc9468d4854d272c486c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radios: 30
-  _speedLerp: 8
-  _angleSpeed: 1.5
-  _angle: 1.05
 --- !u!114 &2032760711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12834,7 +12798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5527d2c90c0f554090bbcf048b64878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _powerPin: 2
 --- !u!1001 &2037390637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12946,7 +12909,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 1}
   numberEnemy: 1
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!1 &2116910706
 GameObject:
   m_ObjectHideFlags: 0
@@ -13402,7 +13365,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &2931928958067851142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7584822000608053185, guid: 58734c41594668840bd3847f2b5ce512,
@@ -13430,7 +13393,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &3496220596250085578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7584822000608053185, guid: 58734c41594668840bd3847f2b5ce512,
@@ -13458,7 +13421,7 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}
 --- !u!4 &7758566084993631942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7584822000608053185, guid: 58734c41594668840bd3847f2b5ce512,
@@ -13486,4 +13449,4 @@ MonoBehaviour:
   center: {fileID: 1686270872}
   axis: {x: 0, y: 0, z: 0.7}
   numberEnemy: 2
-  ScoreManager: 0
+  _scoreManager: {fileID: 0}

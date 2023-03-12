@@ -1,7 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 
 public class EnemyOne : MonoBehaviour
 {
@@ -9,8 +8,16 @@ public class EnemyOne : MonoBehaviour
     public Vector3 axis;
     public static Action<int> DestrouEnemy;
     [SerializeField] private int numberEnemy = 1;
-    public int ScoreManager;
-  //  public ScoreManager ScoreManager;
+    public ScoreManager _scoreManager;
+  
+
+
+    //  public ScoreManager ScoreManager;
+    void Start()
+    {
+       
+        _scoreManager = GameObject.FindObjectOfType<ScoreManager>();
+    }
 
     void Update()
     {
@@ -23,8 +30,8 @@ public class EnemyOne : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //if (collision.gameObject.tag == "Enemy")
-        //{
+        if (collision.gameObject.tag == "Enemy")
+        {
             if (numberEnemy == 1)
             {
                 DestroyEnemy();
@@ -33,12 +40,15 @@ public class EnemyOne : MonoBehaviour
             {
                 numberEnemy = numberEnemy - 1;
             }
-        //}
+        }
     }
     public void DestroyEnemy()
     {
-        DestrouEnemy?.Invoke(0);
+        
+              DestrouEnemy?.Invoke(0);
         Destroy(gameObject);
-       
+        _scoreManager.AddScore(100);
+        
+
     }
 }

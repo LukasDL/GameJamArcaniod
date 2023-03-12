@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ArkanoidRollTest2.unity
     guid: 40c9ede68513d6f4d9479351a4bb09e6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 7cfead8ad84344b418fdbc0be366d91c
   m_configObjects: {}
